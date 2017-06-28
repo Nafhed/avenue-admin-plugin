@@ -1,0 +1,173 @@
+@import '../../../../admin/themes/grav/scss/vendor/bourbon/bourbon';
+
+@import '../../../../admin/themes/grav/scss/configuration/nucleus/base';
+@import '../../../../admin/themes/grav/scss/nucleus/mixins/base';
+
+// taken from admin plugin 'preset.scss'
+$content-bg:				#eeeeee !default;
+$content-text:				#737c81 !default;
+$content-tabs-bg:			#223a47 !default;
+$content-tabs-text:			#d1dee7 !default;
+$underline: 				#ff0;
+$subtle-text:				#0ff;
+$update-bg:					#8f5aad !default;
+$update-text:				#ffffff !default;
+
+@if (lightness($content-bg) < 50) {
+    $underline: lighten($content-bg, 3%);
+    $subtle-text: darken($content-text, 10%);
+} @else {
+    $underline: darken($content-bg, 3%);
+    $subtle-text: lighten($content-text, 10%);
+}
+
+// filtering
+#page-filtering {
+
+	.typeahead {
+
+		ul.typeahead-selector {
+			list-style-type: none;
+			background: #FFF;
+			padding: 0;
+			margin-top: -1em;
+			width: 600px;
+			position: absolute;
+
+			li {
+				border-top: 1px solid #ccc;
+				color: #349886;
+				padding: 1em 2em;
+			}
+		}
+
+		.venue-container {
+			width: 500px;
+		}
+
+	}
+
+	input {
+		margin: 1em 0;
+	}
+
+}
+
+// standard styles to match with default admin pages
+.venues-list {
+	border-top: 1px solid $underline;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		margin: 0;
+		padding: 3px 0;
+	}
+
+	.row {
+		border-bottom: 1px solid $underline;
+		display: inline-block;
+		width: 100%;
+
+		@include transition(all 0.2s ease);
+		line-height: 2.5rem;
+		padding-right: 3rem;
+
+		@include breakpoint(mobile-only) {
+			padding-right: 1rem;
+		}
+		[data-hint]:after {
+			line-height: 1 !important;
+			width: auto !important;
+			white-space: nowrap !important;
+		}
+
+		&:hover {
+			background: lighten($content-bg, 2%);
+		}
+
+		p.page-route {
+			color: $content-text;
+
+			.spacer {
+				color: $content-text;
+			}
+		}
+
+		.badge.lang {
+			background-color: $content-tabs-bg;
+			color: $content-tabs-text;
+		}
+
+		.badge.lang.info {
+			background-color: $update-bg;
+			color: $update-text;
+		}
+	}
+
+	.venue-home {
+		color: $subtle-text;
+	}
+
+	.venue-info {
+		color: $subtle-text;
+	}
+
+	.venue-tools {
+		float: right;
+
+		button {
+			background: #FF7171;
+			color: #FFF;
+		}
+
+		i {
+			font-size: 1.4em;
+			margin-right: 6px;
+		}
+	}
+}
+
+.leaflet-container {
+	min-height: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+ul.pagination {
+	list-style-type: none;
+	padding: 0;
+	background: #253a47;
+	width: 450px;
+	margin: 4em auto 1em auto;
+	border-radius: 0.3em;
+	text-align: center;
+
+	li {
+		color: #FFF;
+		display: inline-block;
+		padding: 0.4em 1em;
+
+		a {
+			color: #349886;
+
+			:hover {
+				cursor: pointer;
+			}
+		}
+
+		&:active {
+			background: #00a6cf;
+
+			a {
+				color: #000;
+			}
+		}
+	}
+
+}
+

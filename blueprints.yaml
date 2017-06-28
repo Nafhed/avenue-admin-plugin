@@ -1,0 +1,29 @@
+name: Avenue Admin
+version: 0.1
+description: Adds an administration panel to show Venues
+icon: map-marker
+author:
+  name: Nathan Brettell
+  email: nathanbrettell@gmail.com
+  url: http://nathanbrettell.com
+homepage: https://github.com/getgrav/grav-plugin-avenue-admin
+keywords: admin, plugin, manager, panel, Avenue, venues, events
+bugs: https://github.com/getgrav/grav-plugin-avenue-admin/issues
+license: MIT
+
+dependencies:
+  - admin
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

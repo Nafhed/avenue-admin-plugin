@@ -1,0 +1,8 @@
+en:
+  PLUGIN_AVENUE_ADMIN:
+    AVENUE_ADMIN_VENUES: Venues
+    AVENUE_ADMIN_EVENTS: Events
+    VENUE_ITEMS_LIST: Venues List
+    EVENT_ITEMS_LIST: Events List
+    VENUE_DETAILS: Item Details
+    EVENT_DETAILS: Event Details

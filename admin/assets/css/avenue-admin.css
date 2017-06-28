@@ -1,0 +1,97 @@
+#page-filtering .typeahead ul.typeahead-selector {
+  list-style-type: none;
+  background: #FFF;
+  padding: 0;
+  margin-top: -1em;
+  width: 600px;
+  position: absolute; }
+  #page-filtering .typeahead ul.typeahead-selector li {
+    border-top: 1px solid #ccc;
+    color: #349886;
+    padding: 1em 2em; }
+
+#page-filtering .typeahead .venue-container {
+  width: 500px; }
+
+#page-filtering input {
+  margin: 1em 0; }
+
+.venues-list {
+  border-top: 1px solid #e6e6e6; }
+  .venues-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .venues-list li {
+    margin: 0;
+    padding: 3px 0; }
+  .venues-list .row {
+    border-bottom: 1px solid #e6e6e6;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    line-height: 2.5rem;
+    padding-right: 3rem; }
+    @media only all and (max-width: 47.938em) {
+      .venues-list .row {
+        padding-right: 1rem; } }
+    .venues-list .row [data-hint]:after {
+      line-height: 1 !important;
+      width: auto !important;
+      white-space: nowrap !important; }
+    .venues-list .row:hover {
+      background: #f3f3f3; }
+    .venues-list .row p.page-route {
+      color: #737c81; }
+      .venues-list .row p.page-route .spacer {
+        color: #737c81; }
+    .venues-list .row .badge.lang {
+      background-color: #223a47;
+      color: #d1dee7; }
+    .venues-list .row .badge.lang.info {
+      background-color: #8f5aad;
+      color: #ffffff; }
+  .venues-list .venue-home {
+    color: #8d959a; }
+  .venues-list .venue-info {
+    color: #8d959a; }
+  .venues-list .venue-tools {
+    float: right; }
+    .venues-list .venue-tools button {
+      background: #FF7171;
+      color: #FFF; }
+    .venues-list .venue-tools i {
+      font-size: 1.4em;
+      margin-right: 6px; }
+
+.venues-map {
+  width: 100%;
+  margin: 3em 0; }
+
+.leaflet-container {
+  min-height: 380px;
+  width: 80%;
+  margin: 0 auto; }
+
+ul.pagination {
+  list-style-type: none;
+  padding: 0;
+  background: #253a47;
+  width: 450px;
+  margin: 4em auto 1em auto;
+  border-radius: 0.3em;
+  text-align: center; }
+  ul.pagination li {
+    color: #FFF;
+    display: inline-block;
+    padding: 0.4em 1em; }
+    ul.pagination li a {
+      color: #349886; }
+      ul.pagination li a :hover {
+        cursor: pointer; }
+    ul.pagination li:active {
+      background: #00a6cf; }
+      ul.pagination li:active a {
+        color: #000; }

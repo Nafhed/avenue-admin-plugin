@@ -1,0 +1,5 @@
+<div id="venues"></div>
+{% block javascripts %}
+        {% do assets.addJs('plugin://avenue-admin/admin/js/App/collective.js', {'group':'bottom'}) %}
+{% endblock %}
+{{ assets.js('bottom')|raw }}
