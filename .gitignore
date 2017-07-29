@@ -3,5 +3,7 @@
 node_modules/*
 
 admin/**/*.map
+
+# sensitive
 admin/js/App/config.js
 admin/js/App/collective.js
