@@ -7,3 +7,4 @@ node_modules/*
 >>>>>>> 9fef973c74af77e1f08c1b88f8a89e672100a3e3
 
 admin/**/*.map
+admin/js/App/config.js
